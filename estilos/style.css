@@ -1,9 +1,12 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
 /* CORES */
 
 :root {
-    --cor1: #2D0C57;
+    --cor1: #1B0F2F;
     --cor2: #6A0DAD;
     --cor3: #8E7CC3;
     --cor4: #B026FF;
@@ -16,13 +19,128 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    
+    font-family: "Poppins", sans-serif;
+
 }
 
-div.background {
-    background-image: url(../imagens/background.jpg);
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+
+    background: linear-gradient(to right, #1B0F2F, #24133f );
+    position: relative;
+}
+
+.formulario {
+    width: 400px;
+    background-color: #371f5a;
+    border: 1px solid rgba(255, 255, 255, 0.178);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.171);
+    color: white;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.formulario > h1 {
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+.caixa-form {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.caixa-form > input {
     width: 100%;
-    height: 800px;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    color: white;
+    background-color: #24133f;
+    font-size: 1em;
 
+    padding: 0px 15px;
+}
 
+.caixa-form > input::placeholder {
+    color: rgba(255, 255, 255, 0.692);
+}
 
+.caixa-form > .icon {
+    position: absolute;
+    right: 20px;
+    top: 26%;
+}
+
+.caixa-esqueci {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 25px;
+    font-size: 1em;
+}
+
+.caixa-esqueci > label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.caixa-esqueci > a {
+    text-decoration: none;
+    color: white;
+    font-size: 1em;
+    
+}
+
+.caixa-esqueci > a:hover {
+    text-decoration: underline;
+   
+}
+
+button {
+    width: 100%;
+    height: 45px;
+    border: none;
+    background-color: white;
+    border-radius: 10px;
+    color: #24133f;
+    font-size: 1em; 
+    outline: none;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.5s;
+}
+
+button:hover {
+    background-color: rgba(255, 255, 255, 0.719);
+    transform: translateY(-5px);
+}
+
+.link-registro {
+    margin-top: 15px;
+    text-align: center;
+
+}
+
+.link-registro > p > a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    
+   
+}
+
+.link-registro a:hover {
+    text-decoration: underline;
 }
