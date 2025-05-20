@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/estilos/principal.css">
+    <script src="script.js"></script>
     <title>Lemun</title>
 </head>
 <body>
@@ -22,7 +23,7 @@
         <button>ASSISTIR AGORA</button>
     </div>
 
-    <div id="explore">
+    <div id="explorar">
         <nav>
            <a href="#">Populares</a>
            <a href="#">Recomendados</a>
@@ -31,12 +32,26 @@
         </nav>
     </div>
 
-    <div class="caixa">
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
+    <div class="container-carrossel">
+    <button class="botao-navegacao esquerda" onclick="rolarCarrossel(-1)">&#10094;</button>
+    
+    <div class="carrossel" id="carrossel">
+      <div class="filme"><img src="imagens/capas-filmes/filme1.jpg" alt="Filme 1"></div>
+      <div class="filme"><img src="imagens/capas-filmes/filme2.jpg" alt="Filme 2"></div>
+      <div class="filme"><img src="imagens/capas-filmes/filme3.jpg" alt="Filme 3"></div>
+      <div class="filme"><img src="imagens/capas-filmes/filme4.jpg" alt="Filme 4"></div>
+      <div class="filme"><img src="imagens/capas-filmes/filme5.jpg" alt="Filme 5"></div>
+      <div class="filme"><img src="imagens/capas-filmes/filme6.jpg" alt="Filme 6"></div>
+      <div class="filme"><img src="imagens/capas-filmes/filme7.jpg" alt="Filme 7"></div>
+      <div class="filme"><img src="imagens/capas-filmes/filme8.jpg" alt="Filme 8"></div>
+      <div class="filme"><img src="imagens/capas-filmes/filme9.jpg" alt="Filme 9"></div>
+      <div class="filme"><img src="imagens/capas-filmes/filme10.jpg" alt="Filme 10"></div>
     </div>
+    
+    <button class="botao-navegacao direita" onclick="rolarCarrossel(1)">&#10095;</button>
+  </div>
+  </div>
+    
+
 </body>
 </html>

@@ -59,13 +59,14 @@ header > nav > a {
 
 }
 
-#explore {
+#explorar {
     text-align: center;
     margin-top: 50px;
+    margin-bottom: 40px;
 
 }
 
-#explore > nav > a {
+#explorar > nav > a {
     text-decoration: none;
     color: white;
     padding: 30px;
@@ -75,4 +76,67 @@ header > nav > a {
 }
 
 
+/* CARROSSEL FILMES */
 
+.container-carrossel {
+  position: relative;
+  width: 90%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.carrossel {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding-bottom: 10px;
+}
+
+.carrossel::-webkit-scrollbar {
+  display: none;
+}
+
+.filme {
+  flex: 0 0 auto;
+  width: 200px;
+  height: 300px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.filme img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s;
+}
+
+.filme img:hover {
+  transform: scale(1.05);
+}
+
+.botao-navegacao {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 30px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.6);
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.botao-navegacao.esquerda {
+  left: 0;
+}
+
+.botao-navegacao.direita {
+  right: 0;
+}
+
+.botao-navegacao:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
