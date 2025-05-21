@@ -59,6 +59,12 @@ header > nav > a {
 
 }
 
+#nav-filmes {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+
 #explorar {
     text-align: center;
     margin-top: 50px;
@@ -74,6 +80,7 @@ header > nav > a {
     font-weight: 600;
     
 }
+
 
 
 /* CARROSSEL FILMES */

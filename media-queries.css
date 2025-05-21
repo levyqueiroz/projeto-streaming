@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+@media (max-width: 767px) {
+    #slogan {
+        font-size: 0.6em;
+    }
+
+    #explorar #nav-filmes a {
+        font-size: 0.8em;
+    }
+    
+}
