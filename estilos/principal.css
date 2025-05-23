@@ -43,6 +43,7 @@ header > nav > a {
     font-size: 3em;
     text-align: center;
     margin-top: 50px;
+    margin-bottom: 40px;
 
 }
 
@@ -90,6 +91,7 @@ header > nav > a {
   width: 90%;
   margin: auto;
   overflow: hidden;
+  margin-top: 40px;
 }
 
 .carrossel {
@@ -146,4 +148,48 @@ header > nav > a {
 
 .botao-navegacao:hover {
   background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* PESQUISAR */
+
+.caixa-pesquisar {
+
+  margin: auto;
+  background-color: #3d2466;
+  height: 60px;
+  width: 40%;
+  padding: 10px;
+  border-radius: 20px;
+  display:  flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+.pesquisar {
+  border: none;
+  background: none;
+  outline: none;
+  padding: 0;
+  color: white;
+  font-size: 16px;
+  line-height: 40px;
+  width: 0;
+}
+
+.botao-pesquisar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  
+}
+
+.caixa-pesquisar:hover > .pesquisar {
+  width: 240px;
+  
 }
