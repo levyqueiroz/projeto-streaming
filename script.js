@@ -7,3 +7,5 @@ function rolarCarrossel(direcao) {
     behavior: 'smooth'
   });
 }
+
+

@@ -92,6 +92,16 @@ header > nav > a {
   overflow: hidden;
 }
 
+.paragrafo {
+    color: white;
+    padding: 30px;
+    font-size: 1.2em;
+    font-weight: 600;
+    margin-bottom: -10px;
+    margin-left: -15px;
+    
+}
+
 .carrossel {
   display: flex;
   gap: 10px;
@@ -146,4 +156,14 @@ header > nav > a {
 
 .botao-navegacao:hover {
   background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* MENU */
+
+.mobile-menu-icon {
+  display: none;
+}
+
+.mobile-menu {
+  display: none;
 }

@@ -4,19 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/estilos/principal.css">
-    <link rel="stylesheet" href="media-queries.css">
+    <link rel="stylesheet" href="estilos/media-queries.css">
     <script src="script.js"></script>
     <title>Lemun</title>
 </head>
 <body>
     <header>
         <p>LUMEN</p>
-        <nav>
-            <a href="#">Início</a>
-            <a href="#">Séries</a>
-            <a href="#">Filmes</a>
-            <a href="#">Minha Lista</a>
+        <nav class="nav-bar">
+            <a class="nav-item" href="#">Início</a>
+            <a class="nav-item" href="#">Séries</a>
+            <a class="nav-item" href="#">Filmes</a>
+            <a class="nav-item" href="#">Minha Lista</a>
+
         </nav>
+
+        <div>
+            <button class="mobile-menu-icon"><img src="imagens/menu.png" alt="" class="icon"></button>
+        </div>                
+
+        <div class="mobile-menu">
+             <a class="nav-item" href="#">Início</a>
+            <a class="nav-item" href="#">Séries</a>
+            <a class="nav-item" href="#">Filmes</a>
+            <a class="nav-item" href="#">Minha Lista</a>
+        </div>
+
     </header>
 
     <div id="botao">
@@ -33,7 +46,9 @@
         </nav>
     </div>
 
+
     <div class="container-carrossel">
+    <p class="paragrafo">Populares</p>
     <button class="botao-navegacao esquerda" onclick="rolarCarrossel(-1)">&#10094;</button>
     
     <div class="carrossel" id="carrossel">
