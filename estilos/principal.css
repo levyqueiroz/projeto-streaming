@@ -17,6 +17,10 @@ body {
     background: linear-gradient(to right, #1B0F2F, #24133f );
 }
 
+body::-webkit-scrollbar {
+  display: none;
+}
+
 header {
     display: flex;
     justify-content: space-between;
@@ -158,4 +162,45 @@ header > nav > a {
 
 .botao-navegacao:hover {
   background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* PESQUISA */
+
+.search-box {
+    width: 40px;
+    height: 40px;
+    background-color: rgb(51, 44, 44);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    transition: width 0.4s ease;
+    box-shadow: 0 0 5px rgba(0,0,0,0.3);
+    overflow: hidden;
+    margin: auto;
+}
+
+.search-box input {
+    border: none;
+    outline: none;
+    padding: 10px;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    font-size: 1rem;
+}
+
+.search-box button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.search-box:focus-within {
+    width: 200px;
+}
+
+.search-box:focus-within input {
+    opacity: 1;
 }
