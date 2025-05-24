@@ -5,21 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/estilos/principal.css">
     <link rel="stylesheet" href="estilos/media-queries.css">
-    <script src="script.js"></script>
-    <title>Lemun</title>
+    
+    <title>Lumen</title>
 </head>
 <body>
     <header>
         <p>LUMEN</p>
-        <nav class="nav-bar">
-            <a class="nav-item" href="#">Início</a>
-            <a class="nav-item" href="#">Séries</a>
-            <a class="nav-item" href="#">Filmes</a>
-            <a class="nav-item" href="#">Minha Lista</a>
 
+        <nav class="menu">
+        <a href="#">Início</a>
+        <a href="#">Séries</a>
+        <a href="#">Filmes</a>
+        <a href="#">Minha Lista</a>
         </nav>
 
+        <button id="btn-menu" onclick="animarMenu()">
+          <img src="imagens/menu.png" alt="">
+        </button>
+
+        <div class="menu-mobile" id="menu-mobile">
+          <nav>
+          <a href="#">Início</a>
+          <a href="#">Séries</a>
+          <a href="#">Filmes</a>
+          <a href="#">Minha Lista</a>
+          </nav>
+        </div>
+      
     </header>
+
 
     <div id="botao">
         <p id="slogan">Seu próximo vício está a um play de distância</p>
@@ -28,13 +42,6 @@
 
         </nav>
     </div> 
-
-   <div class="search-box">
-    <input type="text" placeholder="Pesquisar...">
-    <button type="submit">
-        <img src="imagens/search.png" alt="Buscar">
-    </button>
-</div>
 
 
     <div class="container-carrossel">
@@ -88,12 +95,14 @@
 
     <button class="botao-navegacao direita" onclick="rolarCarrossel2(1)">&#10095;</button>
 
-
     
   </div>
 
+
+
+
  
-    
+  <script src="script.js"></script>
 
 </body>
 </html>

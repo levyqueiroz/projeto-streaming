@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-@media (max-width: 767px) {
+@media screen and (max-width: 767px) {
     #slogan {
         font-size: 0.6em;
     }
@@ -9,5 +9,18 @@
         font-size: 1.1em;
     }
     
-    
+    .menu {
+        display: none;
+    }
+
+    .menu-mobile.abrir {
+        visibility: visible;
+        height: calc(100vh  - 79px);
+    }
+
+    #btn-menu {
+        display: block;
+    } 
 }
+    
+    
