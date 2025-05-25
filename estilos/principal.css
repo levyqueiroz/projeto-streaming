@@ -199,4 +199,5 @@ header > nav > a {
   border: none;
   cursor: pointer;
   display: none;
+  margin-right: 20px;
 }
