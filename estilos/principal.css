@@ -21,6 +21,7 @@ body::-webkit-scrollbar {
   display: none;
 }
 
+
 header {
     display: flex;
     justify-content: space-between;
@@ -47,7 +48,7 @@ header > nav > a {
     font-size: 3em;
     text-align: center;
     margin-top: 50px;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 
 }
 
@@ -200,4 +201,5 @@ header > nav > a {
   cursor: pointer;
   display: none;
   margin-right: 20px;
+  
 }
