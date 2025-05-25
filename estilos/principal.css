@@ -26,6 +26,7 @@ header {
     display: flex;
     justify-content: space-between;
     padding: 20px;
+    
 }
 
 header > p {
@@ -33,6 +34,8 @@ header > p {
     font-weight: 600;
     font-size: 1.4em;
     padding-left: 30px;
+    
+    
 }
 
 header > nav > a {
@@ -41,7 +44,11 @@ header > nav > a {
     padding: 15px;
     font-size: 1.3em;
     padding-right: 30px;
+    
+    
+    
 }
+
 
 #botao {
     color: white;
@@ -49,7 +56,7 @@ header > nav > a {
     text-align: center;
     margin-top: 50px;
     margin-bottom: 30px;
-
+    
 }
 
 #botao > button {
@@ -63,36 +70,44 @@ header > nav > a {
     border: none;
     cursor: pointer;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    
 
 }
 
   #botao > button:hover {
     transform: scale(1.03);
-      box-shadow: 0 8px 20px rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 20px rgba(255, 255, 255, 0.1);
   }
 
 
-#nav-filmes {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-}
+    .menu-item {
+      position: relative;
+      color: #fff;
+      cursor: pointer;
+      padding: 10px 15px;
+      transition: color 0.3s ease;
+    }
 
-#explorar {
-    text-align: center;
-    margin-top: 50px;
-    margin-bottom: 40px;
+    .menu-item::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      height: 2px;
+      width: 0%;
+      background: linear-gradient(90deg, #9D4EDD, #9D4EDD);
+      transition: width 0.4s ease;
+    }
 
-}
+    .menu-item:hover::after {
+      width: 100%;
+    }
 
-#explorar > nav > a {
-    text-decoration: none;
-    color: white;
-    padding: 30px;
-    font-size: 1.2em;
-    font-weight: 600;
-    
-}
+    .menu-item:hover {
+      
+      text-shadow: 0 0 5px #ffffff86;
+    }
+
 
 
 
