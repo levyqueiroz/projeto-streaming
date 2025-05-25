@@ -21,6 +21,18 @@
     #btn-menu {
         display: block;
     } 
-}
+
+      .banner-promocional {
+        flex-direction: column;
+        align-items: center;
+        
+      }
+
+      .botao-banner {
+        margin-top: 12px;
+        margin-left: 0;
+      }
+    }
+
     
     

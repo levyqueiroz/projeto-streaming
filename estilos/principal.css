@@ -96,7 +96,7 @@ header > nav > a {
   width: 90%;
   margin: auto;
   overflow: hidden;
-  margin-top: 40px;
+  margin-top: 10px;
 }
 
 .paragrafo {
@@ -115,6 +115,7 @@ header > nav > a {
   overflow-x: auto;
   scroll-behavior: smooth;
   padding-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .carrossel::-webkit-scrollbar {
@@ -203,3 +204,57 @@ header > nav > a {
   margin-right: 20px;
   
 }
+
+/* BANNER PROMOCIONAL */
+  
+ .banner-promocional {
+      display: flex;
+      align-items: center;
+      background-color: #1c143f;
+      color: white;
+      border-radius: 12px;
+      padding: 16px 24px;
+      max-width: 600px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      margin: auto;
+    }
+
+    .banner-promocional:hover {
+      transform: scale(1.03);
+      box-shadow: 0 8px 20px rgba(255, 255, 255, 0.1);
+    }
+
+    .icone-banner {
+      font-size: 36px;
+      margin-right: 16px;
+    }
+
+    .conteudo-banner {
+      flex-grow: 1;
+    }
+
+    .titulo-banner {
+      font-weight: bold;
+      font-size: 16px;
+      margin-bottom: 4px;
+    }
+
+    .descricao-banner {
+      font-size: 14px;
+      color: #ccc;
+    }
+
+    .botao-banner {
+      background-color: #3a365e;
+      color: white;
+      padding: 8px 16px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 14px;
+      margin-left: 16px;
+      transition: background-color 0.2s ease;
+    }
+
+    .botao-banner:hover {
+      background-color: #57507a;
+    }
