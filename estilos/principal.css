@@ -217,7 +217,8 @@ header > nav > a {
  .banner-promocional {
       display: flex;
       align-items: center;
-      background-color: #1c143f;
+    background-color: #9D4EDD;
+
       color: white;
       border-radius: 12px;
       padding: 16px 24px;
@@ -265,3 +266,7 @@ header > nav > a {
     .botao-banner:hover {
       background-color: #57507a;
     }
+
+    /* PERGUNTAS FREQUENTES */
+
+   
