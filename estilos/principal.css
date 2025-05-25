@@ -122,7 +122,7 @@ header > nav > a {
   overflow-x: auto;
   scroll-behavior: smooth;
   padding-bottom: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .carrossel::-webkit-scrollbar {
@@ -215,58 +215,86 @@ header > nav > a {
 /* BANNER PROMOCIONAL */
   
  .banner-promocional {
-      display: flex;
-      align-items: center;
+    display: flex;
+    align-items: center;
     background-color: #9D4EDD;
+    
+    color: white;
+    border-radius: 12px;
+    padding: 16px 24px;
+    max-width: 600px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin: auto;
+  }
 
-      color: white;
-      border-radius: 12px;
-      padding: 16px 24px;
-      max-width: 600px;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-      margin: auto;
-    }
+  .banner-promocional:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 20px rgba(255, 255, 255, 0.1);
+  }
 
-    .banner-promocional:hover {
-      transform: scale(1.03);
-      box-shadow: 0 8px 20px rgba(255, 255, 255, 0.1);
-    }
+  .icone-banner {
+    font-size: 36px;
+    margin-right: 16px;
+  }
 
-    .icone-banner {
-      font-size: 36px;
-      margin-right: 16px;
-    }
+  .conteudo-banner {
+    flex-grow: 1;
+  }
 
-    .conteudo-banner {
-      flex-grow: 1;
-    }
+  .titulo-banner {
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 4px;
+  }
 
-    .titulo-banner {
-      font-weight: bold;
-      font-size: 16px;
-      margin-bottom: 4px;
-    }
+  .descricao-banner {
+    font-size: 14px;
+    color: #ccc;
+  }
 
-    .descricao-banner {
-      font-size: 14px;
-      color: #ccc;
-    }
+  .botao-banner {
+    background-color: #3a365e;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 14px;
+    margin-left: 16px;
+    transition: background-color 0.2s ease;
+  }
 
-    .botao-banner {
-      background-color: #3a365e;
-      color: white;
-      padding: 8px 16px;
-      border-radius: 8px;
-      text-decoration: none;
-      font-size: 14px;
-      margin-left: 16px;
-      transition: background-color 0.2s ease;
-    }
+  .botao-banner:hover {
+    background-color: #57507a;
+  }
 
-    .botao-banner:hover {
-      background-color: #57507a;
-    }
+  /* RODAPE  */
 
-    /* PERGUNTAS FREQUENTES */
+  footer {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    
+  }
+
+  #direitos {
+    text-align: center;
+    color: white;
+  }
+
+  .info {
+    width: 70%;
+    height: 200px;
+    color: white;
+    margin: auto;
+    
+    
+  }
+
+  .info > p > a {
+    color: rgb(150, 148, 148);
+    
+  }
 
    
