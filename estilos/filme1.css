@@ -29,11 +29,8 @@ main > .video {
 
 
 .video > iframe {
-    
     width: 100%;
     border: none;
-    
-    
     
 
 }
@@ -76,8 +73,79 @@ main > .nav-filme> a {
     margin: auto;
     margin-top: 20px;
     width: 70%;
-
+    padding: 10px;
+    text-align: justify;
     color: white;
+}
+
+.avaliacao-box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: #9D4EDD;
+  border-radius: 12px;
+  
+  max-width: 600px;
+  margin: 20px auto;
+  width: 70%;
+  color: white;
+
+  
+  
+}
+
+.avaliar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  
+}
+
+.label {
+  font-weight: bold;
+}
+
+.estrelas span {
+  font-size: 24px;
+  color: #ccc;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.estrelas span.ativa {
+  color: gold;
+}
+
+.btn-acao {
+  border: none;
+  background: none;
+  font-weight: bold;
+  color: #ffffff;
+  cursor: pointer;
+  padding: 8px 12px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  transition: all 0.2s;
+}
+
+.btn-acao:hover {
+  background-color: #d07cff;
+}
+
+.btn-acao .icon {
+  margin-right: 6px;
+}
+
+.btn-acao.full {
+  width: 100%;
+  border: 1px solid #d07cff;
+  padding-top: 12px;
+  margin-top: 8px;
+  justify-content: center;
 }
 
 

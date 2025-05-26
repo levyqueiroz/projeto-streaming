@@ -29,3 +29,23 @@ function animarMenu() {
   btnAnimar.classList.toggle('ativo')
 }
 
+
+
+
+const estrelas = document.querySelectorAll('#estrelas span');
+  let notaSelecionada = 0;
+
+  estrelas.forEach((estrela, index) => {
+    estrela.addEventListener('click', () => {
+      notaSelecionada = index + 1;
+      atualizarEstrelas(notaSelecionada);
+    });
+  });
+
+  function atualizarEstrelas(nota) {
+    estrelas.forEach((estrela, index) => {
+      estrela.classList.toggle('ativa', index < nota);
+    });
+  }
+
+
