@@ -3,9 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/principal.css">
+    <link rel="stylesheet" href="estilos/media-queries.css">
+    <link rel="stylesheet" href="estilos/filme1.css">
     <title>Lumen</title>
 </head>
 <body>
-    
+     <header>
+        <p>LEMUN</p>
+
+        <nav class="menu">
+        <a href="#" class="menu-item">Início</a>
+        <a href="#" class="menu-item">Séries</a>
+        <a href="#" class="menu-item">Filmes</a>
+        <a href="#" class="menu-item">Minha Lista</a>
+        </nav>
+
+        <button id="btn-menu" onclick="animarMenu()">
+          <img src="imagens/menu.png" alt="">
+        </button>
+
+        <div class="menu-mobile" id="menu-mobile">
+          <nav>
+          <a href="#" class="menu-item">Início</a>
+          <a href="#" class="menu-item">Séries</a>
+          <a href="#" class="menu-item">Filmes</a>
+          <a href="#" class="menu-item">Minha Lista</a>
+          </nav>
+        </div>
+      
+    </header>
+
+    <main> 
+        <h1 class="titulo">Ursinho Pooh: Sangue e Mel</h1>
+        <nav class="nav-filme">
+            <a href="#">Home</a>
+            <a href="#">Críticas dos usuários</a>
+            <a href="#">Créditos</a>
+            <a href="#">Curiosidades</a>
+        </nav>
+
+        <div class="video"><iframe width="560" height="315" src="https://www.youtube.com/embed/AbKXf16gyn0?si=d3r7Ckg8JIh3aLeH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        
+        </div>
+
+
+    </main>
+
+    <section class="sinopse">
+        <h2>Sinopse</h2>
+            <p>Em Ursinho Pooh: Sangue e Mel, uma macabra releitura de terror baseada na famosa história do Ursinho Pooh, Leitão (Chris Cordell) e Pooh (Craig David Dowsett) são abandonados por Christopher Robin (Nikolai Leon), que, já adulto, decide partir para a faculdade. Furiosos, famintos e magoados, os dois se tornam essencialmente selvagens, e não encontram outra escolha a não ser voltar às suas raízes animais. Perdendo totalmente a personalidade amigável e mansa, eles agora são como um urso e um porco altamente ferozes que querem encontrar presas e matar qualquer um que se atreva a entrar na Floresta dos Sonhos Azuis.
+
+            </p>
+    </section>
+
+
+    <script src="script.js"></script>
 </body>
 </html>
