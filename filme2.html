@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./estilos/principal.css">
+    <link rel="stylesheet" href="./estilos/media-queries.css">
+    <link rel="stylesheet" href="./estilos/filme1.css">
+    <title>Lumen</title>
+</head>
+<body>
+     <header>
+        <p>LEMUN</p>
+
+        <nav class="menu">
+        <a href="principal.html" class="menu-item">Início</a>
+        <a href="#" class="menu-item">Séries</a>
+        <a href="#" class="menu-item">Filmes</a>
+        <a href="#" class="menu-item">Minha Lista</a>
+        </nav>
+
+        <button id="btn-menu" onclick="animarMenu()">
+          <img src="imagens/menu.png" alt="">
+        </button>
+
+        <div class="menu-mobile" id="menu-mobile">
+          <nav>
+          <a href="principal.html" class="menu-item">Início</a>
+          <a href="#" class="menu-item">Séries</a>
+          <a href="#" class="menu-item">Filmes</a>
+          <a href="#" class="menu-item">Minha Lista</a>
+          </nav>
+        </div>
+      
+    </header>
+
+    <main> 
+        <h1 class="titulo">Peaky Blinders</h1>
+        <nav class="nav-filme">
+            <a href="#">Home</a>
+            <a href="#">Críticas dos usuários</a>
+            <a href="#">Créditos</a>
+            <a href="#">Curiosidades</a>
+        </nav>
+
+        <div class="video"><iframe width="560" height="315" src="https://www.youtube.com/embed/oVzVdvGIC7U?si=qWBdeWujQH5wt5g3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        
+        </div>
+
+
+    </main>
+
+    <section class="sinopse">
+        <h2>Sinopse</h2>
+        Em Peaky Blinders, Thomas Shelby (Cillian Murphy) e seus irmãos retornam a Birmingham depois de servir no exército britânico durante a Primeira Guerra Mundial. Shelby e os Peaky Blinders, a gangue de criminosos da qual ele é líder, controlam a cidade com mãos de ferro, construindo um império que vai desde corridas de cavalo adulteradas e roubo de carregamentos até parcerias secretas com os russos. Mas as ambições de Shelby se estendem para além de Birmingham, e ele não vai deixar que ninguém atrapalhe seus planos de se tornar um dos homens mais poderosos do Reino Unido. À medida que sua família se destaca nos negócios, novas alianças se formam, bem como novas e perigosas rivalidades. Ao mesmo tempo que vive as transformações políticas, econômicas e sociais do início do século 20, Shelby precisa lidar com os traumas de seu próprio passado - que parecem atormentá-lo diariamente.
+            </p>
+    </section>
+
+    <div class="avaliacao-box">
+        
+    <div class="avaliar">
+    <span class="label">Avaliar:</span>
+    <div class="estrelas" id="estrelas">
+      <span data-valor="1">&#9733;</span>
+      <span data-valor="2">&#9733;</span>
+      <span data-valor="3">&#9733;</span>
+      <span data-valor="4">&#9733;</span>
+      <span data-valor="5">&#9733;</span>
+    </div>
+    </div>
+    <button class="btn-acao"><span class="icon">🔖</span> Vou ver</button>
+    <button class="btn-acao full"><span class="icon">✏️</span> Escrever minha crítica</button>
+
+    </div>
+
+    <p id="direitos">© 2025 Lumen. Todos os direitos reservados.</p>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
