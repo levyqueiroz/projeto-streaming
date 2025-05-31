@@ -22,18 +22,18 @@
         display: block;
     } 
 
-      .banner-promocional {
-        flex-direction: column;
-        align-items: center;
-        width: 90%;
-        
-      }
-
-      .botao-banner {
-        margin-top: 12px;
-        margin-left: 0;
-      }
+    .banner-promocional {
+      flex-direction: column;
+      align-items: center;
+      width: 90%;
+      
     }
+
+    .botao-banner {
+      margin-top: 12px;
+      margin-left: 0;
+    }
+  }
 
     
     
