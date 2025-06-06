@@ -49,3 +49,4 @@ const estrelas = document.querySelectorAll('#estrelas span');
   }
 
 
+
